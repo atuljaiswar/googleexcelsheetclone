@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows: auto;
+}
+
+header > div {
+	height: 3rem;	
+}
+
+header .page-actions-content {
+	display: flex;
+	align-items: flex-end;
+	background-color: #218c74;
+}
+
+.page-actions-content div {
+	margin:0.5rem;
+	color: #f1f2f6;
+	font-weight: 500;
+}
+
+/* cellprop-action-content start here  */
+
+.cellprop-action-content .material-symbols-outlined {
+  font-size: 26px;
+	cursor: pointer;
+}
+
+.cellprop-action-content select {
+	padding: 0.2rem;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+}
+
+.cellprop-action-content {
+	display: flex;
+	align-items: center;
+	background-color: #ecf0f1;
+}
+
+.cellprop-action-content > * {
+	margin: 0.5rem;
+	display: inline-block;
+}
+
+.font-color-props, .background-color-props {
+	position: relative;
+	cursor: pointer;
+}
+
+.font-color-props img, .background-color-props img {
+	display: none;
+}
+
+.font-color-props input, .background-color-props input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* cellprop-action-content end here  */
+
+footer {
+	height: 3rem;
+}
+
+.footer-container {
+  display: flex;
+	align-items: center;
+	padding:0 0.5rem;
+	height: 100%;
+	background-color: #ecf0f1;
+}
+
+.sheet-add-icon {
+	cursor: pointer;
+	width: 2vw;
+}
+.sheet-actions-content {
+	overflow-x: auto;
+}
+
+.footer-container .sheet-folder-container {
+	/* width: calc( 100vw - 2vw ); */
+	width: 95vw;
+    height: 80%;
+	margin-left: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+
+.formula-actions-content {
+	display: flex;
+	align-items: center;
+	padding: 0 0.5rem;
+	column-gap: 0.2rem;
+	background-color: #ecf0f1;
+	height: 2rem;
+}
+
+.formula-icon {
+	svg {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+.address-bar {
+	width: 4rem;
+	min-width: 4rem;
+	height: 1.3rem;
+}
+
+.formula-icon {
+	margin-top: 4px;
+	svg {
+		width:1.5rem;
+		height: 1.5rem;
+	}
+}
+
+.formula-bar-container {
+	width: 100%;
+	height: 1.3rem;
+}
+
+.formula-actions-content input {
+	outline: none;
+	border: none;
+	border-radius: 2px;
+	width: 100%;
+	height: 100%;
+}
+
+.sheet-folder {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 0.6rem 1rem;
+	cursor: pointer;
+}
+
+.sheet-content {
+	min-width: 70px;
+	text-align: center;
+}
+
+.sheet-folder-container .sheet-folder {
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+	font-weight: bold
+}
+
+
+
+.grid-content {
+	height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+	display: flex;
+	align-items: stretch;
+	overflow: auto;
+	background-color: #ecf0f1;
+}
+
+.grid-content .row-cell {
+	width: 2vw;
+	position: sticky;
+	left: 0;
+}
+
+.columns-cell {
+	width: 97vw;
+}
+
+.columns-cell .heading-column-cell {
+	height: 2rem;
+}
+
+.columns-cell .grid-cells {
+	height: 97rem;
+}
+
+
+.dummy-cell {
+	width: 100%;
+	height: 2rem;
+	background-color: gray;
+}
+
+.row-cell .row-individual-cell {
+	width: 100%;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #dfe4ea;
+}
+
+.heading-column-cell {
+	display: flex;
+}
+
+.heading-column-cell .column-heading-individual-cell {
+	width: 5rem;
+	min-width: 5rem;
+	height: 2rem;
+	border: 1px solid #dfe4ea;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-cells {
+	display: flex;
+	flex-direction: column;
+	background-color: #ecf0f1;
+}
+
+.grid-cells .grid-row {
+	display: flex;
+}
+
+.grid-cells .row-column-cell {
+	background-color: #ecf0f1;
+	width: 5rem;
+	min-width: 5rem;
+	height: 2rem;
+	border: 1px solid #dfe4ea;
+	outline: none;
+	border-radius: 0;
+}
+
+/* .row-column-cell:focus {
+	border-color: blue;
+	border-width: 2px;
+} */
